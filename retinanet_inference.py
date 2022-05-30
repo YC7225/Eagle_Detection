@@ -68,5 +68,6 @@ class Retinanet():
             
             caption = "{} {:.3f}".format(self.labels_to_names[label], score)
             draw_caption(draw, b, caption)
+        cv2.imwrite("image_0000002219.jpg",draw)
         
         return draw
